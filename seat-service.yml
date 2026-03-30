@@ -1,6 +1,8 @@
 server:
   port: 5006
 
+spring:
+
   datasource:
     url: jdbc:mysql://localhost:3306/yt_airline_seat_db
     username: root
@@ -13,8 +15,6 @@ server:
       group-id: seat-service-group
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.springframework.kafka.support.serializer.JacksonJsonDeserializer
-
-
 
 
 eureka:
